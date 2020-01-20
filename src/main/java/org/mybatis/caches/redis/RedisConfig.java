@@ -1,5 +1,5 @@
 /**
- *    Copyright 2015-2018 the original author or authors.
+ *    Copyright 2015-2020 the original author or authors.
  *
  *    Licensed under the Apache License, Version 2.0 (the "License");
  *    you may not use this file except in compliance with the License.
@@ -22,6 +22,9 @@ import javax.net.ssl.SSLSocketFactory;
 import redis.clients.jedis.JedisPoolConfig;
 import redis.clients.jedis.Protocol;
 
+/**
+ * Redis 配置信息
+ */
 public class RedisConfig extends JedisPoolConfig {
 
   private String host = Protocol.DEFAULT_HOST;

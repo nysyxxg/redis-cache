@@ -1,5 +1,5 @@
 /**
- *    Copyright 2015-2018 the original author or authors.
+ *    Copyright 2015-2020 the original author or authors.
  *
  *    Licensed under the Apache License, Version 2.0 (the "License");
  *    you may not use this file except in compliance with the License.
@@ -19,9 +19,6 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 public class SimpleBeanStudentInfo implements Serializable {
-  /**
-   * 
-   */
   private static final long serialVersionUID = 1L;
   String name;
   int age;
@@ -30,7 +27,6 @@ public class SimpleBeanStudentInfo implements Serializable {
   ArrayList<String> courses;
 
   public SimpleBeanStudentInfo() {
-    // TODO Auto-generated constructor stub
     this.name = "Kobe Bryant";
     this.age = 40;
     this.grade = 12;
@@ -80,7 +76,6 @@ public class SimpleBeanStudentInfo implements Serializable {
 
   @Override
   public boolean equals(Object obj) {
-    // TODO Auto-generated method stub
     if (obj == null)
       return false;
     if (!obj.getClass().equals(SimpleBeanStudentInfo.class))
