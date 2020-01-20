@@ -39,10 +39,15 @@ public final class RedisTestCase {
 
     @Test
     public void shouldDemonstrateCopiesAreEqual() {
-        for (int i = 0; i < 1000; i++) {
+        long t1 = System.currentTimeMillis();
+        for (int i = 0; i < 1000000; i++) {
             cache.putObject(i, i);
             assertEquals(i, cache.getObject(i));
         }
+        long t2 = System.currentTimeMillis();
+        System.out.println(t2-t1);
+        //JDKSerializer   68482
+        // KryoSerializer  60180
     }
 
     @Test
