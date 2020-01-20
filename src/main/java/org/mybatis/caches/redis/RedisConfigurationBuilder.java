@@ -44,13 +44,14 @@ final class RedisConfigurationBuilder {
 
   /**
    * Hidden constructor, this class can't be instantiated.
+   * 私有的构造方法
    */
   private RedisConfigurationBuilder() {
   }
 
   /**
    * Return this class instance.
-   *
+   *  单例模式
    * @return this class instance.
    */
   public static RedisConfigurationBuilder getInstance() {
